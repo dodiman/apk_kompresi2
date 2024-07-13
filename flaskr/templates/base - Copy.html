@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aplikasi kompresi</title>
+    {% block style %} {% endblock %}
+</head>
+<body>
+
+    {% include "komponen/menu.html" %}
+
+    {% block content %} {% endblock %}
+
+    <script src="{{ url_for('static', filename='js/config.js') }}"></script>
+    {% block script %} {% endblock %}
+</body>
+</html>

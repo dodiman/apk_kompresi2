@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static', filename="halaman_mulai.css") }}" />
+{% endblock %}
+
+{% block content %}
+    {% include "include/sidebar.html" %}
+    {% include "komponen/form_upload_dok.html" %}
+
+    {% include "komponen/kotak_informasi.html" %}
+
+    
+{% endblock %}
+
+{% block script %}
+<script src="{{ url_for('static', filename='js/axios.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/update_informasi_hasil_kompresi.js') }}"></script>
+<script src="{{ url_for('static', filename='js/mulai.js') }}"></script>
+<script src="{{ url_for('static', filename='js/simpan_hasil_kompresi.js') }}"></script>
+<script src="{{ url_for('static', filename='js/download_file.js') }}"></script>
+<script src="{{ url_for('static', filename='js/informasi_hasil_kompresi.js') }}"></script>
+<script src="{{ url_for('static', filename='js/kompresi_pdf.js') }}"></script>
+{% endblock %}

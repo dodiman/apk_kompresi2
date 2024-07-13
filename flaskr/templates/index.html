@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container kotak_upload_dok">
+
+    <h2>Form Upload Dokumen</h2>
+    {% include "komponen/form_upload_dok.html" %}
+
+
+    {% if form_data %}
+    <p>
+        {{ form_data[0].data }}
+    </p>
+
+    {% endif %}
+
+
+</div>
+
+
+
+
+{% endblock %}

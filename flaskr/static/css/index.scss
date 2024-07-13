@@ -1,0 +1,31 @@
+@import "base";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.kotak_upload_dok {
+    width: 600px;
+}
+
+.myform {
+    @include garis;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    button {
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>contoh form</h2>
+    <form method="post" enctype="multipart/form-data">
+        <input type="checkbox" id="fib" name="metode" value="fib">
+        <label for="fib">Metode Fibonaci</label><br>
+        <input type="checkbox" id="lev" name="metode" value="lev">
+        <label for="lev"> Metode Levenstein</label><br>
+        <br>
+        <input type="text" name="nama" placeholder="nama">
+        <button type="submit">Oke</button>
+    </form>
+
+    <p>{{ nama }}</p>
+    <p>{{ metode }}</p>
+    <p>{{ all_form }}</p>
+</body>
+</html>

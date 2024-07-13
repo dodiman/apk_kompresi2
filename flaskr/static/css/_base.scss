@@ -1,0 +1,3 @@
+@mixin garis($width:1px, $style: solid, $color: black) {
+    border: $width $style $color;
+}
